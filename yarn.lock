@@ -3034,7 +3034,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oclif/core@npm:^4, @oclif/core@npm:^4.5.3":
+"@oclif/core@npm:^4, @oclif/core@npm:^4.5.4":
   version: 4.5.4
   resolution: "@oclif/core@npm:4.5.4"
   dependencies:
@@ -3070,10 +3070,10 @@ __metadata:
   linkType: hard
 
 "@oclif/plugin-plugins@npm:^5":
-  version: 5.4.47
-  resolution: "@oclif/plugin-plugins@npm:5.4.47"
+  version: 5.4.48
+  resolution: "@oclif/plugin-plugins@npm:5.4.48"
   dependencies:
-    "@oclif/core": ^4.5.3
+    "@oclif/core": ^4.5.4
     ansis: ^3.17.0
     debug: ^4.4.0
     npm: ^10.9.3
@@ -3084,7 +3084,7 @@ __metadata:
     validate-npm-package-name: ^5.0.1
     which: ^4.0.0
     yarn: ^1.22.22
-  checksum: 0c3589bd8becb9e4db10ef3f963a9ed7b79531f6e3a55a57e8690d02b1454ed2c767fe796a228d04713557f78e57f0a328dc8debccc983add7ea2eadc3f6694b
+  checksum: 6cc451e5ebcd5d1c06f8e7d24572c7c44ea1731a5f7b3c01514abce5bb5db2437fb88699833a3aacfe17a38d9b74eb18c3bf8b49086794560a73b546a0ac4e69
   languageName: node
   linkType: hard
 
@@ -6211,11 +6211,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.8.3":
-  version: 2.8.7
-  resolution: "baseline-browser-mapping@npm:2.8.7"
+  version: 2.8.8
+  resolution: "baseline-browser-mapping@npm:2.8.8"
   bin:
     baseline-browser-mapping: dist/cli.js
-  checksum: 15a46675aeec236e831644922569863eccb068a1a0131806e91ff0c263bbe6e351825b52cdc6905abf304946997dd8460fd9d3103818ddf4771e2ca0bb3e2de9
+  checksum: d8cd9047549b7b54aed40f15036d9023e77a3919a1eea9db1bad9befb365321ff5bf580d8924de8ddf0022c037feb779f26d14bae4efb1dbc61042f3978d3311
   languageName: node
   linkType: hard
 
