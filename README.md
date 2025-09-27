@@ -1,4 +1,4 @@
-# 🏛️ KANDA - African Cultural Heritage NFT Platform
+# KANDA - African Cultural Heritage NFT Platform
 
 ## **"Own Your Heritage. Preserve Your Pride. Profit From Your Past."**
 > *Every African story deserves to live forever - and reward its keeper*
