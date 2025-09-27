@@ -1,4 +1,5 @@
-#KANDA
+## KANDA
+
 African Cultural Heritage NFT Preservation & Monetization
 📋 PS
 African cultural artifacts, traditional knowledge, and intangible heritage face extinction due to globalization, urbanization, and lack of economic incentives for preservation. Communities cannot monetize their cultural wealth.
@@ -17,7 +18,7 @@ Tertiary: Global collectors interested in authentic African cultural NFTs
 
 💡 Unique Value Proposition
 
-🔧 MVP Features
+🔧 Features
 
 Cultural Asset Minting: Video/audio recording tools for traditional knowledge
 Community Verification: Multi-elder approval system for authenticity
