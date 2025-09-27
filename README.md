@@ -99,16 +99,13 @@ Revenue Split:
 
 ---
 
-## ** Unique Value Proposition**
-
 **KANDA** is a **blockchain-powered revolution** where Africans finally:
-- 🏆 **OWN** their cultural assets as verified digital property
-- 💰 **PROFIT** from their heritage when others use it commercially  
-- 🌍 **CONTROL** how their traditions are shared with the world
-- 👑 **CELEBRATE** being African with economic pride, not just cultural pride
-- ⚡ **PRESERVE** their legacy for children and grandchildren forever
+- **OWN** their cultural assets as verified digital property
+- **PROFIT** from their heritage when others use it commercially  
+- **CONTROL** how their traditions are shared with the world
+- **CELEBRATE** being African with economic pride, not just cultural pride
+- **PRESERVE** their legacy for children and grandchildren forever
 
-### **From Cultural Victims to Cultural Owners**
 Stop watching others get rich from your heritage. Start earning from your own stories.
 - 🎙️ **Record & Mint** cultural assets (stories, music, crafts, wisdom) as verified NFTs
 - 👴 **Community Validation** through multi-elder approval systems
