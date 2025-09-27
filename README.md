@@ -60,7 +60,6 @@ African cultural artifacts, traditional knowledge, and intangible heritage face 
 - **IPFS Storage**: Permanent, decentralized preservation
 
 ### 👥 **Community Verification System**  
-- **Multi-Elder Approval**: Requires 3+ community elders to verify authenticity
 - **Cross-Community Validation**: Prevents local corruption through distributed verification
 - **Reputation Scoring**: Validators earn reputation tokens for accurate verifications
 - **Dispute Resolution**: Community governance for contested heritage items
@@ -68,7 +67,7 @@ African cultural artifacts, traditional knowledge, and intangible heritage face 
 ### 💰 **Smart Royalty Distribution**
 ```solidity
 Revenue Split:
-├── Creator (Elder): 40%
+├── Creator : 40%
 ├── Community Fund: 30%  
 ├── Elder Validators: 20%
 └── Platform Sustainability: 10%
