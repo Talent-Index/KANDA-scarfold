@@ -1,3 +1,32 @@
+#KANDA
+African Cultural Heritage NFT Preservation & Monetization
+📋 PS
+African cultural artifacts, traditional knowledge, and intangible heritage face extinction due to globalization, urbanization, and lack of economic incentives for preservation. Communities cannot monetize their cultural wealth.
+
+WHY: Traditional knowledge holders (elders, craftsmen, storytellers) lack digital literacy and access to global markets. Western institutions often appropriating African cultural elements without compensation. No verifiable ownership system for intangible heritage.
+
+WHERE: Rural communities across Kenya, Nigeria, Mali, Ethiopia with rich oral traditions, traditional crafts, and cultural practices at risk of disappearing.
+
+HOW: Community-owned NFT platform where traditional knowledge holders mint verified cultural assets (stories, music, art techniques, medicinal knowledge) and earn royalties when used commercially or for educational purposes.
+
+🎯 Target User
+
+Primary: African traditional artists, storytellers, craftspeople aged 40+
+Secondary: Cultural institutions, museums, educational organizations
+Tertiary: Global collectors interested in authentic African cultural NFTs
+
+💡 Unique Value Proposition
+
+🔧 MVP Features
+
+Cultural Asset Minting: Video/audio recording tools for traditional knowledge
+Community Verification: Multi-elder approval system for authenticity
+Smart Royalties: Automatic revenue sharing with communities and knowledge holders
+Heritage Marketplace: Curated platform for authentic African cultural NFTs
+Educational Licensing: Special rates for schools and cultural institutions
+
+🏗️ Technical Architecture (Scaffold-ETH2)
+
 # 🏗 Scaffold-ETH 2
 
 <h4 align="center">
