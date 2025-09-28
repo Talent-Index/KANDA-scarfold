@@ -3,7 +3,7 @@
 ## **Own Your Heritage. Preserve Your Pride. Profit From Your Past.**
 > *Every African story deserves to live forever - and reward its keeper*
 
-## 🚨 **The Cultural Crisis We Face TODAY**
+## 🚨 **THE CULTURAL CRISIS WE FACE TODAY**
 
 ### **Our Heritage is Disappearing Before Our Eyes**
 - 📉 **Every 14 days**, another African language dies forever
