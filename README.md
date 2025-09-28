@@ -1,9 +1,9 @@
-# 🏛️ KANDA - African Cultural Heritage NFT Platform
+# KANDA - African Cultural Heritage NFT Platform
 
-## **"Own Your Heritage. Preserve Your Pride. Profit From Your Past."**
+## **Own Your Heritage. Preserve Your Pride. Profit From Your Past.**
 > *Every African story deserves to live forever - and reward its keeper*
 
-## 🚨 **The Cultural Crisis We Face TODAY**
+## 🚨 **THE CULTURAL CRISIS WE FACE TODAY**
 
 ### **Our Heritage is Disappearing Before Our Eyes**
 - 📉 **Every 14 days**, another African language dies forever
@@ -60,7 +60,6 @@ African cultural artifacts, traditional knowledge, and intangible heritage face 
 - **IPFS Storage**: Permanent, decentralized preservation
 
 ### 👥 **Community Verification System**  
-- **Multi-Elder Approval**: Requires 3+ community elders to verify authenticity
 - **Cross-Community Validation**: Prevents local corruption through distributed verification
 - **Reputation Scoring**: Validators earn reputation tokens for accurate verifications
 - **Dispute Resolution**: Community governance for contested heritage items
@@ -68,7 +67,7 @@ African cultural artifacts, traditional knowledge, and intangible heritage face 
 ### 💰 **Smart Royalty Distribution**
 ```solidity
 Revenue Split:
-├── Creator (Elder): 40%
+├── Creator : 40%
 ├── Community Fund: 30%  
 ├── Elder Validators: 20%
 └── Platform Sustainability: 10%
@@ -99,16 +98,13 @@ Revenue Split:
 
 ---
 
-## ** Unique Value Proposition**
-
 **KANDA** is a **blockchain-powered revolution** where Africans finally:
-- 🏆 **OWN** their cultural assets as verified digital property
-- 💰 **PROFIT** from their heritage when others use it commercially  
-- 🌍 **CONTROL** how their traditions are shared with the world
-- 👑 **CELEBRATE** being African with economic pride, not just cultural pride
-- ⚡ **PRESERVE** their legacy for children and grandchildren forever
+- **OWN** their cultural assets as verified digital property
+- **PROFIT** from their heritage when others use it commercially  
+- **CONTROL** how their traditions are shared with the world
+- **CELEBRATE** being African with economic pride, not just cultural pride
+- **PRESERVE** their legacy for children and grandchildren forever
 
-### **From Cultural Victims to Cultural Owners**
 Stop watching others get rich from your heritage. Start earning from your own stories.
 - 🎙️ **Record & Mint** cultural assets (stories, music, crafts, wisdom) as verified NFTs
 - 👴 **Community Validation** through multi-elder approval systems
