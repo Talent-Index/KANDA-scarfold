@@ -56,5 +56,11 @@
   "packageManager": "yarn@3.2.3",
   "engines": {
     "node": ">=20.18.3"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^1.4.0",
+    "@openzeppelin/contracts": "^5.4.0",
+    "ethers": "^6.15.0",
+    "ipfs-http-client": "^60.0.1"
   }
 }
