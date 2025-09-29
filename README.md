@@ -79,12 +79,6 @@ Revenue Split:
 - **Global Discovery**: Multi-language search and recommendation system
 - **Impact Tracking**: Show community benefit from each purchase
 
-### 📚 **Educational Integration**
-- **Special Pricing**: Discounted rates for schools and universities
-- **Curriculum Integration**: Ready-to-use cultural content for educators
-- **Teacher Resources**: Lesson plans and cultural context materials
-- **Student Engagement**: Interactive heritage exploration tools
-
 ---
 
 ## 🏗️ **Technical Architecture**
