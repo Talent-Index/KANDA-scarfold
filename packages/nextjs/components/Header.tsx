@@ -20,16 +20,22 @@ export const menuLinks: HeaderMenuLink[] = [
   {
     label: "Home",
     href: "/",
+    icon: "🏠",
   },
   {
-    label: "ERC-20",
-    href: "/erc20",
-    icon: <BanknotesIcon className="h-4 w-4" />,
+    label: "Create",
+    href: "/create",
+    icon: "🎤",
   },
   {
-    label: "Debug Contracts",
-    href: "/debug",
-    icon: <BugAntIcon className="h-4 w-4" />,
+    label: "Marketplace",
+    href: "/marketplace",
+    icon: "🏪",
+  },
+  {
+    label: "Community",
+    href: "/community",
+    icon: "🏘️",
   },
 ];
 
