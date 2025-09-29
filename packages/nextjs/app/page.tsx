@@ -14,23 +14,23 @@ export default function Home() {
       {/* Glass + Animation + Patterns */}
       <style jsx global>{`
         .glass {
-          background: rgba(255, 255, 255, 0.1);
+          background: rgba(205, 168, 44, 0.15);
           backdrop-filter: blur(20px);
           -webkit-backdrop-filter: blur(20px);
-          border: 1px solid rgba(255, 255, 255, 0.2);
+          border: 1px solid rgba(205, 168, 44, 0.3);
         }
         .glass-strong {
-          background: rgba(255, 255, 255, 0.15);
+          background: rgba(0, 0, 0, 0.75);
           backdrop-filter: blur(30px);
           -webkit-backdrop-filter: blur(30px);
-          border: 1px solid rgba(255, 255, 255, 0.3);
+          border: 1px solid rgba(205, 168, 44, 0.4);
         }
         .hover-lift {
           transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         .hover-lift:hover {
           transform: translateY(-8px) scale(1.02);
-          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(205, 168, 44, 0.3);
         }
         .fade-in {
           animation: fadeInUp 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -44,6 +44,9 @@ export default function Home() {
         .stagger-3 {
           animation-delay: 0.3s;
         }
+        .stagger-4 {
+          animation-delay: 0.4s;
+        }
         @keyframes fadeInUp {
           0% {
             opacity: 0;
@@ -55,14 +58,26 @@ export default function Home() {
           }
         }
         .african-pattern {
-          background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF8C00' fill-opacity='0.1'%3E%3Cpath d='M60 60l30-30-30-30-30 30 30 30zm0-15l15-15-15-15-15 15 15 15z'/%3E%3Cpath d='M0 60l30-30-30-30v60zm120 0l-30-30 30-30v60z'/%3E%3Cpath d='M60 0l30 30-30 30L30 30 60 0zm0 120l30-30-30-30-30 30 30 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+          background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23cda82c' fill-opacity='0.2'%3E%3Cpath d='M60 60l30-30-30-30-30 30 30 30zm0-15l15-15-15-15-15 15 15 15z'/%3E%3Cpath d='M0 60l30-30-30-30v60zm120 0l-30-30 30-30v60z'/%3E%3Cpath d='M60 0l30 30-30 30L30 30 60 0zm0 120l30-30-30-30-30 30 30 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .pulse-slow {
+          animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+          0%,
+          100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0.7;
+          }
         }
       `}</style>
 
       {/* Hero Section (Left-Aligned) */}
-      <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-amber-900 via-orange-900 to-red-900">
+      <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-[#cda82c] via-black to-[#c41e25]">
         <div className="absolute inset-0 african-pattern"></div>
-        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-20 flex flex-col lg:flex-row items-center gap-12">
           {/* Left Column - Hero Content */}
@@ -70,7 +85,7 @@ export default function Home() {
             {/* Blockchain Badge */}
             <div className="mb-10 fade-in stagger-1">
               <div className="inline-flex items-center px-6 py-3 rounded-full glass">
-                <div className="w-3 h-3 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full mr-3 pulse-slow"></div>
+                <div className="w-3 h-3 bg-gradient-to-r from-[#cda82c] to-[#c41e25] rounded-full mr-3 pulse-slow"></div>
                 <span className="text-white font-medium text-sm tracking-wide">POWERED BY SCAFFOLD-ETH</span>
               </div>
             </div>
@@ -80,7 +95,7 @@ export default function Home() {
               <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                 KANDA
                 <br />
-                <span className="bg-gradient-to-r from-[#cda82c] via-[#c41e25] to-[#2f573a] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#cda82c] to-[#c41e25] bg-clip-text text-transparent">
                   <Typewriter
                     texts={["Own Your Heritage.", "Preserve Your Pride.", "Profit From Your Past."]}
                     typeSpeed={60}
@@ -90,7 +105,7 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-xl text-gray-200 max-w-2xl leading-relaxed">
-                The first platform where African elders become digital millionaires while preserving culture for future
+                The first platform where Africans become digital millionaires by preserving their culture for future
                 generations.
               </p>
             </div>
@@ -101,12 +116,12 @@ export default function Home() {
                 href="/create"
                 className="group relative bg-gradient-to-r from-[#cda82c] to-[#c41e25] text-white px-10 py-5 rounded-xl font-semibold text-lg overflow-hidden hover-lift shadow-lg"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-[#e0c653] to-[#d43a3a] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#c41e25] to-[#cda82c] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <span className="relative flex items-center justify-center">🎤 Create Heritage</span>
               </Link>
               <Link
                 href="/marketplace"
-                className="group glass-strong text-white px-10 py-5 rounded-xl font-semibold text-lg hover-lift border border-white/20 hover:border-white/40"
+                className="group glass-strong text-white px-10 py-5 rounded-xl font-semibold text-lg hover-lift border border-[#cda82c]/20 hover:border-[#cda82c]/40"
               >
                 🏪 Explore Marketplace
               </Link>
@@ -123,47 +138,47 @@ export default function Home() {
                 <div className="text-sm text-gray-300 font-medium">Languages</div>
               </div>
               <div className="glass rounded-2xl p-6 text-center hover-lift">
-                <div className="text-4xl lg:text-4xl font-bold text-[#2f573a] mb-2">12</div>
+                <div className="text-4xl lg:text-4xl font-bold text-[#cda82c] mb-2">12</div>
                 <div className="text-sm text-gray-300 font-medium">Communities</div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Problem Statement */}
-        <div className="relative z-10 max-w-4xl mx-auto glass-strong rounded-2xl p-8 mb-16 text-left fade-in stagger-2">
-          <h2 className="text-2xl font-bold text-white mb-4">🚨 The Cultural Crisis We Face TODAY</h2>
+        {/* Problem Statement 
+        <div className="relative z-10 max-w-4xl mx-auto glass-strong rounded-2xl p-8 mb-16 text-left fade-in stagger-2 mx-6">
+          <h2 className="text-2xl font-bold text-[#cda82c] mb-4">🚨 The Cultural Crisis We Face TODAY</h2>
           <ul className="space-y-3 text-gray-200">
             <li>📉 Every 14 days, another African language dies forever</li>
             <li>👴 90% of African elders will take their stories to the grave</li>
-            <li>🏛️ $2.6B annual revenue from “African-inspired” content goes abroad</li>
+            <li>🏛️ $2.6B annual revenue from "African-inspired" content goes abroad</li>
             <li>💰 Wakanda made $1.3B for Marvel, while real African communities remain poor</li>
           </ul>
-          <p className="mt-4 text-lg font-semibold text-red-300">
+          <p className="mt-4 text-lg font-semibold text-[#c41e25]">
             We are losing our cultural wealth to digital colonialism.
           </p>
-        </div>
+        </div>*/}
 
         {/* Features */}
         <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6 pb-20 fade-in stagger-3">
           <div className="glass rounded-xl p-6 hover-lift">
             <div className="text-3xl mb-3">🎤</div>
-            <h3 className="font-bold text-xl mb-2 text-white">Voice-First Recording</h3>
+            <h3 className="font-bold text-xl mb-2 text-[#cda82c]">Voice-First Recording</h3>
             <p className="text-gray-300">Record in any African language. No typing, no blockchain knowledge needed.</p>
           </div>
           <div className="glass rounded-xl p-6 hover-lift">
             <div className="text-3xl mb-3">👥</div>
-            <h3 className="font-bold text-xl mb-2 text-white">Elder Verification</h3>
+            <h3 className="font-bold text-xl mb-2 text-[#cda82c]">Elder Verification</h3>
             <p className="text-gray-300">Community elders verify authenticity, preventing cultural appropriation.</p>
           </div>
           <div className="glass rounded-xl p-6 hover-lift">
             <div className="text-3xl mb-3">💰</div>
-            <h3 className="font-bold text-xl mb-2 text-white">Lifetime Royalties</h3>
+            <h3 className="font-bold text-xl mb-2 text-[#cda82c]">Lifetime Royalties</h3>
             <p className="text-gray-300">Earn 60% of every license fee. Your heritage pays you forever.</p>
           </div>
           <div className="glass rounded-xl p-6 hover-lift">
             <div className="text-3xl mb-3">🌍</div>
-            <h3 className="font-bold text-xl mb-2 text-white">Global Reach</h3>
+            <h3 className="font-bold text-xl mb-2 text-[#cda82c]">Global Reach</h3>
             <p className="text-gray-300">Universities, Netflix, documentaries – reach buyers worldwide.</p>
           </div>
         </div>

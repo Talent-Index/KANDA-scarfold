@@ -19,26 +19,26 @@
   name: "light";
 
   --color-primary: #cda82c;          /* Gray Yellow */
-  --color-primary-content: #161b2b;  /* Dark Gray Blue for contrast */
+  --color-primary-content: #000000;  /* Black text for contrast */
 
-  --color-secondary: #2f573a;        /* Dark Gray Green */
-  --color-secondary-content: #ffffff;
+  --color-secondary: #c41e25;        /* Red */
+  --color-secondary-content: #ffffff; /* White text */
 
   --color-accent: #c41e25;           /* Red */
-  --color-accent-content: #ffffff;
+  --color-accent-content: #ffffff;   /* White text */
 
-  --color-neutral: #161b2b;          /* Dark Gray Blue */
-  --color-neutral-content: #ffffff;
+  --color-neutral: #666666;          /* Medium gray */
+  --color-neutral-content: #ffffff;  /* White text */
 
-  --color-base-100: #ffffff;
-  --color-base-200: #f9fafb;
-  --color-base-300: #e5e7eb;
-  --color-base-content: #161b2b;
+  --color-base-100: #ffffff;         /* White background */
+  --color-base-200: #f8f8f8;         /* Light gray background */
+  --color-base-300: #e5e5e5;         /* Medium light gray */
+  --color-base-content: #000000;     /* Black text */
 
-  --color-info: #2f573a;
-  --color-success: #2f573a;
-  --color-warning: #cda82c;
-  --color-error: #c41e25;
+  --color-info: #cda82c;             /* Gray Yellow */
+  --color-success: #cda82c;          /* Gray Yellow */
+  --color-warning: #cda82c;          /* Gray Yellow */
+  --color-error: #c41e25;            /* Red */
 
   --radius-field: 9999rem;
   --radius-box: 1rem;
@@ -47,27 +47,27 @@
 @plugin "daisyui/theme" {
   name: "dark";
 
-  --color-primary: #cda82c;          /* Keep Gray Yellow */
-  --color-primary-content: #161b2b;
+  --color-primary: #cda82c;          /* Gray Yellow */
+  --color-primary-content: #000000;  /* Black text for contrast */
 
-  --color-secondary: #2f573a;
-  --color-secondary-content: #ffffff;
+  --color-secondary: #c41e25;        /* Red */
+  --color-secondary-content: #ffffff; /* White text */
 
-  --color-accent: #c41e25;
-  --color-accent-content: #ffffff;
+  --color-accent: #c41e25;           /* Red */
+  --color-accent-content: #ffffff;   /* White text */
 
-  --color-neutral: #161b2b;
-  --color-neutral-content: #ffffff;
+  --color-neutral: #333333;          /* Dark gray */
+  --color-neutral-content: #ffffff;  /* White text */
 
-  --color-base-100: #161b2b;
-  --color-base-200: #2f573a;
-  --color-base-300: #0f131f;
-  --color-base-content: #ffffff;
+  --color-base-100: #000000;         /* Black background */
+  --color-base-200: #1a1a1a;         /* Very dark gray */
+  --color-base-300: #2a2a2a;         /* Dark gray */
+  --color-base-content: #ffffff;     /* White text */
 
-  --color-info: #2f573a;
-  --color-success: #2f573a;
-  --color-warning: #cda82c;
-  --color-error: #c41e25;
+  --color-info: #cda82c;             /* Gray Yellow */
+  --color-success: #cda82c;          /* Gray Yellow */
+  --color-warning: #cda82c;          /* Gray Yellow */
+  --color-error: #c41e25;            /* Red */
 
   --radius-field: 9999rem;
   --radius-box: 1rem;
@@ -153,7 +153,7 @@
   }
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar - Updated to use theme colors */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -163,18 +163,18 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #f97316;
+  background: #cda82c; /* Gray Yellow */
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ea580c;
+  background: #c41e25; /* Red on hover */
 }
 
-/* Hover effects */
+/* Hover effects - Updated to use theme colors */
 button:not(:disabled):hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  box-shadow: 0 4px 6px -1px rgb(205 168 44 / 0.2); /* Gray Yellow shadow */
 }
 
 button:disabled {
@@ -182,13 +182,13 @@ button:disabled {
   opacity: 0.6;
 }
 
-/* Focus states */
+/* Focus states - Updated to use theme colors */
 input:focus,
 select:focus,
 textarea:focus {
   outline: none;
   ring: 2px;
-  ring-color: #f97316;
+  ring-color: #cda82c; /* Gray Yellow focus ring */
 }
 
 /* Loading spinner */
