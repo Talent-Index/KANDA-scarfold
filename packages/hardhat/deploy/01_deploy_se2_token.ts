@@ -22,7 +22,7 @@ const deploySe2Token: DeployFunction = async function (hre: HardhatRuntimeEnviro
   const { deployer } = await hre.getNamedAccounts();
   const { deploy } = hre.deployments;
 
-  await deploy("KandaHeritage", {
+  await deploy("S", {
     from: deployer,
     log: true,
     // autoMine: can be passed to the deploy function to make the deployment process faster on local networks by
@@ -31,8 +31,8 @@ const deploySe2Token: DeployFunction = async function (hre: HardhatRuntimeEnviro
   });
 };
 
-export default deployKandaHeritage;
+export default deploySe2Token;
 
 // Tags are useful if you have multiple deploy files and only want to run one of them.
 // e.g. yarn deploy --tags KandaHeritage
-deploySe2Token.tags = ["KandaHeritage"];
+deploySe2Token.tags = ["SE2Token"];
