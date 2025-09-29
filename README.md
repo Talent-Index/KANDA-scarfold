@@ -6,11 +6,11 @@
 ## 🚨 **THE CULTURAL CRISIS WE FACE TODAY**
 
 ### **Our Heritage is Disappearing Before Our Eyes**
-- 📉 **Every 14 days**, another African language dies forever
-- 👴 **90% of African elders** will take their stories to the grave - unrecorded, unlicensed, unrewarded
-- 🏛️ **$2.6 billion** annual revenue from "African-inspired" content goes to foreign companies, not creators
-- 📱 **85% of African youth** can't name 5 traditional stories from their own community
-- 🌍 **Netflix, Disney, Hollywood** profit from African culture while communities remain poor
+- 📉 **Every 14 days**, another African language dies forever.
+- 👴 **90% of African elders** will take their stories to the grave - unrecorded, unlicensed, unrewarded.
+- 🏛️ **$2.6 billion** annual revenue from "African-inspired" content goes to foreign companies, not creators.
+- 📱 **85% of African youth** can't name 5 traditional stories from their own community.
+- 🌍 **Netflix, Disney, Hollywood** profit from African culture while communities remain poor.
 
 ### **The Painful Reality:**
 While **Wakanda generates $1.3 billion** for Marvel using African aesthetics, the **real African communities** whose cultures inspired it remain in poverty. Our grandmothers' lullabies become corporate jingles. Our traditional patterns become fashion trends. Our sacred stories become blockbuster plots.
@@ -22,11 +22,11 @@ While **Wakanda generates $1.3 billion** for Marvel using African aesthetics, th
 ## 🔥 **Why This Matters RIGHT NOW**
 
 African cultural artifacts, traditional knowledge, and intangible heritage face **extinction** due to:
-- 📉 **Cultural Erasure**: Urbanization and globalization are wiping out traditions faster than we can preserve them
-- 💸 **Economic Exploitation**: Our ancestors' wisdom generates billions for others while communities stay poor  
-- 🏛️ **Digital Colonialism**: Western institutions monetize African elements without compensation or credit
-- 👥 **Knowledge Gap**: Elders die with untold stories while youth disconnect from their roots
-- ⚖️ **No Ownership**: Zero systems to prove authenticity or claim rightful compensation for our heritage
+- 📉 **Cultural Erasure**: Urbanization and globalization are wiping out traditions faster than we can preserve them.
+- 💸 **Economic Exploitation**: Our ancestors' wisdom generates billions for others while communities stay poor. 
+- 🏛️ **Digital Colonialism**: Western institutions monetize African elements without compensation or credit.
+- 👥 **Knowledge Gap**: Elders die with untold stories while youth disconnect from their roots.
+- ⚖️ **No Ownership**: Zero systems to prove authenticity or claim rightful compensation for our heritage.
 
 **The Clock is Ticking**: We're not just losing stories - we're losing our identity, our economic power, and our children's birthright.
 
@@ -35,9 +35,9 @@ African cultural artifacts, traditional knowledge, and intangible heritage face 
 ## 🎯 **Target Users**
 
 ### **Primary**: African Heritage Creators (40+ years)
-- Traditional storytellers, craftspeople, musicians
-- Elders with deep cultural knowledge
-- Community wisdom keepers
+- Traditional storytellers, craftspeople, musicians.
+- Elders with deep cultural knowledge.
+- Community wisdom keepers.
 
 ### **Secondary**: Cultural Institutions & Buyers
 - Museums, universities, educational organizations
