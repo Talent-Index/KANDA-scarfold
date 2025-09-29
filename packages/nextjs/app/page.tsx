@@ -117,13 +117,13 @@ export default function Home() {
                 className="group relative bg-gradient-to-r from-[#cda82c] to-[#c41e25] text-white px-10 py-5 rounded-xl font-semibold text-lg overflow-hidden hover-lift shadow-lg"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-[#c41e25] to-[#cda82c] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <span className="relative flex items-center justify-center">🎤 Create Heritage</span>
+                <span className="relative flex items-center justify-center">🪘 Create Heritage</span>
               </Link>
               <Link
                 href="/marketplace"
                 className="group glass-strong text-white px-10 py-5 rounded-xl font-semibold text-lg hover-lift border border-[#cda82c]/20 hover:border-[#cda82c]/40"
               >
-                🏪 Explore Marketplace
+                🌍 Explore Marketplace
               </Link>
             </div>
 

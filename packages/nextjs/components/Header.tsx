@@ -19,22 +19,22 @@ export const menuLinks: HeaderMenuLink[] = [
   {
     label: "Home",
     href: "/",
-    icon: "🏠",
+    icon: "🛖",
   },
   {
     label: "Create",
     href: "/create",
-    icon: "🎤",
+    icon: "🪘",
   },
   {
     label: "Marketplace",
     href: "/marketplace",
-    icon: "🏪",
+    icon: "🌍",
   },
   {
     label: "Community",
     href: "/community",
-    icon: "🏘️",
+    icon: "🤝",
   },
 ];
 
