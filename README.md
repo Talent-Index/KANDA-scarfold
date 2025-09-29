@@ -30,6 +30,10 @@ African cultural artifacts, traditional knowledge, and intangible heritage face 
 
 **The Clock is Ticking**: We're not just losing stories - we're losing our identity, our economic power, and our children's birthright.
 
+🌍 Our Vision
+
+KANDA is more than a platform — it’s a movement. We envision a future where African culture is not just preserved but also valued globally as a source of pride, wealth, and identity. By combining blockchain technology with community-driven validation, we ensure that every story, song, and tradition becomes a living digital asset — owned by its people, accessible to the world, and rewarding to its guardians. Our goal is to transform cultural heritage from something at risk of extinction into a sustainable economy that empowers Africans and inspires generations.
+
 ---
 
 ## 🎯 **Target Users**
@@ -122,7 +126,7 @@ To get started with Scaffold-ETH 2, follow the steps below:
 1. Install dependencies if it was skipped in CLI:
 
 ```
-cd my-dapp-example
+cd KANDA-scarfold
 yarn install
 ```
 
