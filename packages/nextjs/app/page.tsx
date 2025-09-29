@@ -1,7 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Typewriter from "../components/Typewriter";
 import { useKanda } from "../hooks/scaffold-eth/useKanda";
+
+// adjust relative path if different
 
 export default function Home() {
   const { allHeritages } = useKanda();
@@ -78,7 +81,12 @@ export default function Home() {
                 KANDA
                 <br />
                 <span className="bg-gradient-to-r from-[#cda82c] via-[#c41e25] to-[#2f573a] bg-clip-text text-transparent">
-                  Building Web3 Heritage
+                  <Typewriter
+                    texts={["Own Your Heritage.", "Preserve Your Pride.", "Profit From Your Past."]}
+                    typeSpeed={60}
+                    deleteSpeed={40}
+                    delay={1400}
+                  />
                 </span>
               </h1>
               <p className="text-xl text-gray-200 max-w-2xl leading-relaxed">
