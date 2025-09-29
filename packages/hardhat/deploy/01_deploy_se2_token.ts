@@ -34,5 +34,5 @@ const deploySe2Token: DeployFunction = async function (hre: HardhatRuntimeEnviro
 export default deploySe2Token;
 
 // Tags are useful if you have multiple deploy files and only want to run one of them.
-// e.g. yarn deploy --tags KandaHeritage
+// e.g. yarn deploy --tags SE2Token
 deploySe2Token.tags = ["SE2Token"];
