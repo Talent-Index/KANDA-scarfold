@@ -136,7 +136,7 @@ export default function CreatePage() {
             </div>
 
             <h1 className="text-4xl font-bold text-white mb-4 drop-shadow-lg fade-in stagger-1">
-              🎤 Preserve Your Heritage
+              🪘 Preserve Your Heritage
             </h1>
 
             <p className="text-gray-200 text-lg fade-in stagger-2">
