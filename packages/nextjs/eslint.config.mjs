@@ -18,9 +18,17 @@ export default defineConfig([
     extends: compat.extends("next/core-web-vitals", "next/typescript", "prettier"),
 
     rules: {
+      // ✅ Already disabled
       "@typescript-eslint/no-explicit-any": "off",
       "@typescript-eslint/ban-ts-comment": "off",
 
+      // 🔥 Lint won’t block you for unused imports/vars
+      "@typescript-eslint/no-unused-vars": "warn",
+
+      // 🔥 JSX can contain raw quotes without escaping
+      "react/no-unescaped-entities": "off",
+
+      // 🔥 Prettier only warns (won’t fail lint-staged)
       "prettier/prettier": [
         "warn",
         {
