@@ -18,6 +18,18 @@ jobs:
         node: [lts/*]
 
     steps:
+
+      - name: Install dependencies for native modules
+        run: sudo apt-get update && sudo apt-get  install -y build-essential python3 g++ make
+
+      - name: Clean Yarn cache and node_modules
+        run: |
+         yarn cache clean
+         rm -rf node_modules
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      
       - name: Checkout
         uses: actions/checkout@master
 
@@ -35,17 +47,8 @@ jobs:
 
       - name: Install dependencies for native modules
         run: sudo apt-get update && sudo apt-get install -y build-essential python3 g++ make
+
     
-      - name: Install dependencies for native modules
-        run: sudo apt-get update && sudo apt-get install -y build-essential python3 g++ make
-
-      - name: Clean Yarn cache and node_modules
-         run: |
-           yarn cache clean
-           rm -rf node_modules
-
-      - name: Install dependencies
-         run: yarn install --frozen-lockfile   
 
       - name: Run hardhat lint
         run: yarn hardhat:lint --max-warnings=0
