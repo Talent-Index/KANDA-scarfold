@@ -51,9 +51,11 @@ export default function CommunityPage() {
   const [newMessage, setNewMessage] = useState("");
   const [showChat, setShowChat] = useState(false);
 
+  // Single handleVerify function with proper functionName
   const handleVerify = async (tokenId: number) => {
     try {
       await verifyHeritage({
+        functionName: "verifyHeritage", // Add this required property
         args: [BigInt(tokenId)],
       });
       setExpandedHeritage(null);
@@ -207,9 +209,16 @@ export default function CommunityPage() {
                 <h1 className="text-4xl font-bold mb-2">🤝 Community Dashboard</h1>
 
                 {isValidator && (
-                  <div className="inline-flex items-center glass rounded-full px-4 py-2">
+                  <div className="inline-flex items-center glass rounded-full px-4 py-2 mt-2">
                     <span className="mr-2">👴</span>
                     <span className="font-semibold">Community Elder Validator</span>
+                  </div>
+                )}
+
+                {!isValidator && address && (
+                  <div className="inline-flex items-center glass rounded-full px-4 py-2 mt-2">
+                    <span className="mr-2">👤</span>
+                    <span className="font-semibold">Community Member</span>
                   </div>
                 )}
               </div>
@@ -404,6 +413,21 @@ export default function CommunityPage() {
                     No heritage items awaiting verification at the moment. Great work preserving our cultural
                     authenticity!
                   </p>
+                </div>
+              )}
+
+              {/* Non-Validator Message */}
+              {!isValidator && (
+                <div className="glass-strong rounded-xl shadow-lg p-8 text-center fade-in stagger-5">
+                  <div className="text-6xl mb-4">👥</div>
+                  <h3 className="text-2xl font-bold text-white mb-2">Welcome to the Community!</h3>
+                  <p className="text-gray-300 mb-4">
+                    You can view community activities, chat with members, and track your heritage contributions. Apply
+                    to become an Elder Validator to help verify cultural authenticity.
+                  </p>
+                  <button className="px-6 py-3 bg-gradient-to-r from-[#cda82c] to-[#c41e25] text-black font-semibold rounded-lg hover:scale-105 transition-transform">
+                    Apply to Become Elder
+                  </button>
                 </div>
               )}
 

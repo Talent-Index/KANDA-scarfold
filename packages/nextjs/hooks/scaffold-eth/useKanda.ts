@@ -1,44 +1,46 @@
-
-
-
-import { useScaffoldContractRead, useScaffoldContractWrite } from "~~/hooks/scaffold-eth";
+import type { Address } from "viem";
 import { useAccount } from "wagmi";
+import { useScaffoldReadContract, useScaffoldWriteContract } from "~~/hooks/scaffold-eth";
 
 export const useKanda = () => {
   const { address } = useAccount();
 
-  const { data: allHeritages, isLoading } = useScaffoldContractRead({
+  const { data: allHeritages, isLoading } = useScaffoldReadContract({
     contractName: "KandaHeritage",
     functionName: "getAllHeritages",
+    query: {
+      enabled: true,
+    },
   });
 
-  const { data: myHeritages } = useScaffoldContractRead({
+  const { data: myHeritages } = useScaffoldReadContract({
     contractName: "KandaHeritage",
     functionName: "getMyHeritages",
-    args: address ? [address] : undefined,
-    enabled: !!address,
+    args: [address || ("0x0000000000000000000000000000000000000000" as Address)],
+    query: {
+      enabled: !!address,
+    },
   });
 
-  const { data: isValidator } = useScaffoldContractRead({
+  const { data: isValidator } = useScaffoldReadContract({
     contractName: "KandaHeritage",
     functionName: "isValidator",
-    args: address ? [address] : undefined,
-    enabled: !!address,
+    args: [address || ("0x0000000000000000000000000000000000000000" as Address)],
+    query: {
+      enabled: !!address,
+    },
   });
 
-  const { writeAsync: mintHeritage, isMining: isMinting } = useScaffoldContractWrite({
+  const { writeContractAsync: mintHeritage, isMining: isMinting } = useScaffoldWriteContract({
     contractName: "KandaHeritage",
-    functionName: "mintHeritage",
   });
 
-  const { writeAsync: verifyHeritage, isMining: isVerifying } = useScaffoldContractWrite({
+  const { writeContractAsync: verifyHeritage, isMining: isVerifying } = useScaffoldWriteContract({
     contractName: "KandaHeritage",
-    functionName: "verifyHeritage",
   });
 
-  const { writeAsync: licenseHeritage, isMining: isLicensing } = useScaffoldContractWrite({
+  const { writeContractAsync: licenseHeritage, isMining: isLicensing } = useScaffoldWriteContract({
     contractName: "KandaHeritage",
-    functionName: "licenseHeritage",
   });
 
   return {
@@ -54,4 +56,3 @@ export const useKanda = () => {
     isLicensing,
   };
 };
-*/

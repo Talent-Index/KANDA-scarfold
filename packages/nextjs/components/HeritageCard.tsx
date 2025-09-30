@@ -13,6 +13,7 @@ interface HeritageCardProps {
   price: bigint;
   verified: boolean;
   totalEarnings: bigint;
+  onLicense?: (tokenId: number, price: bigint) => void;
 }
 
 export const HeritageCard = ({
@@ -24,16 +25,23 @@ export const HeritageCard = ({
   price,
   verified,
   totalEarnings,
+  onLicense, // Add this to destructuring
 }: HeritageCardProps) => {
   const { licenseHeritage, isLicensing } = useKanda();
   const [showLicense, setShowLicense] = useState(false);
 
   const handleLicense = async () => {
     try {
-      await licenseHeritage({
-        args: [BigInt(tokenId)],
-        value: price,
-      });
+      // Use the passed onLicense prop if available, otherwise use the hook directly
+      if (onLicense) {
+        await onLicense(tokenId, price);
+      } else {
+        await licenseHeritage({
+          functionName: "licenseHeritage", // Add this
+          args: [BigInt(tokenId)],
+          value: price,
+        });
+      }
       setShowLicense(false);
     } catch (error) {
       console.error("License error:", error);

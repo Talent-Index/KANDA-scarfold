@@ -5,9 +5,21 @@ import { HeritageCard } from "~~/components/HeritageCard";
 import { useKanda } from "~~/hooks/scaffold-eth/useKanda";
 
 export default function MarketplacePage() {
-  const { allHeritages, isLoading } = useKanda();
+  const { allHeritages, isLoading, licenseHeritage } = useKanda(); // Add licenseHeritage here
   const [filterType, setFilterType] = useState("all");
   const [sortBy, setSortBy] = useState("newest");
+
+  const handleLicense = async (tokenId: number, price: bigint) => {
+    try {
+      await licenseHeritage({
+        functionName: "licenseHeritage",
+        args: [BigInt(tokenId)],
+        value: price,
+      });
+    } catch (error) {
+      console.error("Licensing failed:", error);
+    }
+  };
 
   // Filter and sort logic
   const filteredHeritages =
@@ -219,6 +231,7 @@ export default function MarketplacePage() {
                       price={heritage.price}
                       verified={heritage.verified}
                       totalEarnings={heritage.totalEarnings}
+                      onLicense={handleLicense} // Pass the handleLicense function to the card
                     />
                   </div>
                 ))}

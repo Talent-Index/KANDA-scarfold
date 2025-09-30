@@ -8,6 +8,8 @@ import { useKanda } from "~~/hooks/scaffold-eth/useKanda";
 export default function CreatePage() {
   const router = useRouter();
   const { mintHeritage, isMinting } = useKanda();
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [error, setError] = useState("");
 
   const [formData, setFormData] = useState({
     title: "",
@@ -19,23 +21,40 @@ export default function CreatePage() {
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent default form submission
+    setError("");
 
     try {
       await mintHeritage({
+        functionName: "mintHeritage",
         args: [
-          formData.title,
+          formData.title, // Use formData properties
           formData.creator,
           formData.culturalType,
           formData.language,
-          formData.metadataURI || "ipfs://demo-metadata",
-          parseEther(formData.price),
+          formData.metadataURI || `ipfs://metadata-${Date.now()}`, // Provide default if empty
+          parseEther(formData.price), // Convert to wei
         ],
       });
 
-      router.push("/marketplace");
+      setIsSuccess(true);
+
+      // Reset form after successful submission
+      setTimeout(() => {
+        setFormData({
+          title: "",
+          creator: "",
+          culturalType: "story",
+          language: "english",
+          metadataURI: "",
+          price: "0.01",
+        });
+        setIsSuccess(false);
+        router.push("/marketplace"); // Redirect to marketplace
+      }, 3000);
     } catch (error) {
-      console.error("Mint error:", error);
+      console.error("Minting failed:", error);
+      setError("Failed to create heritage item. Please try again.");
     }
   };
 
@@ -144,6 +163,26 @@ export default function CreatePage() {
             </p>
           </div>
 
+          {/* Success Message */}
+          {isSuccess && (
+            <div className="glass-strong rounded-2xl p-6 mb-8 text-center fade-in">
+              <div className="text-4xl mb-4">🎉</div>
+              <h3 className="text-xl font-bold text-[#cda82c] mb-2">Heritage Created Successfully!</h3>
+              <p className="text-gray-300">
+                Your cultural heritage has been preserved on the blockchain. Redirecting to marketplace...
+              </p>
+            </div>
+          )}
+
+          {/* Error Message */}
+          {error && (
+            <div className="glass-strong rounded-2xl p-6 mb-8 border-red-500 border fade-in">
+              <div className="text-4xl mb-4">⚠️</div>
+              <h3 className="text-xl font-bold text-red-400 mb-2">Error</h3>
+              <p className="text-gray-300">{error}</p>
+            </div>
+          )}
+
           {/* Main form with enhanced glassmorphism */}
           <form
             onSubmit={handleSubmit}
@@ -233,10 +272,23 @@ export default function CreatePage() {
             </div>
 
             <div className="fade-in stagger-2">
+              <label className="block text-sm font-medium text-[#cda82c] mb-2">Metadata URI (Optional)</label>
+              <input
+                type="text"
+                value={formData.metadataURI}
+                onChange={e => setFormData(prev => ({ ...prev, metadataURI: e.target.value }))}
+                placeholder="ipfs://your-metadata-hash (optional)"
+                className="w-full p-3 glass-input rounded-lg text-white placeholder-gray-300 transition-all duration-300"
+              />
+              <p className="text-sm text-gray-400 mt-1">Leave empty for auto-generated metadata</p>
+            </div>
+
+            <div className="fade-in stagger-2">
               <label className="block text-sm font-medium text-[#cda82c] mb-2">Price (ETH) *</label>
               <input
                 type="number"
                 step="0.001"
+                min="0.001"
                 required
                 value={formData.price}
                 onChange={e => setFormData(prev => ({ ...prev, price: e.target.value }))}
@@ -248,7 +300,7 @@ export default function CreatePage() {
 
             <button
               type="submit"
-              disabled={isMinting}
+              disabled={isMinting || isSuccess}
               className="w-full py-4 bg-gradient-to-r from-[#cda82c] to-[#c41e25] hover:from-[#c41e25] hover:to-[#cda82c] text-black font-bold rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transform hover:scale-[1.02] fade-in stagger-3"
             >
               {isMinting ? (
@@ -256,6 +308,8 @@ export default function CreatePage() {
                   <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-black mr-2"></div>
                   Preserving Heritage...
                 </span>
+              ) : isSuccess ? (
+                "✅ Heritage Created!"
               ) : (
                 "🏛️ Preserve My Heritage"
               )}

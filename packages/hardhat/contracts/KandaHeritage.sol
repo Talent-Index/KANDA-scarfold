@@ -3,11 +3,17 @@ pragma solidity ^0.8.19;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
-
-contract KandaHeritage is ERC721, Ownable, ReentrancyGuard {
+contract KandaHeritage is ERC721, Ownable{
     uint256 private _tokenIdCounter;
+    bool private _locked;
+
+    modifier nonReentrant() {
+        require(!_locked, "ReentrancyGuard: reentrant call");
+        _locked = true;
+        _;
+        _locked = false;
+    }
 
     struct Heritage {
         string title;

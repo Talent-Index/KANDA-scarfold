@@ -4,10 +4,30 @@ import Link from "next/link";
 import Typewriter from "../components/Typewriter";
 import { useKanda } from "../hooks/scaffold-eth/useKanda";
 
-// adjust relative path if different
-
 export default function Home() {
-  const { allHeritages } = useKanda();
+  const { allHeritages, mintHeritage } = useKanda(); // Add mintHeritage from hook
+
+  // Remove this function since it's not being used on the home page
+  // If you need it, move it to your create page instead
+  /*
+  const handleSubmit = async () => {
+    try {
+      await mintHeritage({
+        functionName: "mintHeritage",
+        args: [
+          title,        // string memory title
+          creator,      // string memory creator  
+          culturalType, // string memory culturalType
+          language,     // string memory language
+          metadataURI,  // string memory metadataURI
+          parseEther(price) // uint256 price
+        ]
+      });
+    } catch (error) {
+      console.error("Minting failed:", error);
+    }
+  };
+  */
 
   return (
     <>
@@ -144,20 +164,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* Problem Statement 
-        <div className="relative z-10 max-w-4xl mx-auto glass-strong rounded-2xl p-8 mb-16 text-left fade-in stagger-2 mx-6">
-          <h2 className="text-2xl font-bold text-[#cda82c] mb-4">🚨 The Cultural Crisis We Face TODAY</h2>
-          <ul className="space-y-3 text-gray-200">
-            <li>📉 Every 14 days, another African language dies forever</li>
-            <li>👴 90% of African elders will take their stories to the grave</li>
-            <li>🏛️ $2.6B annual revenue from "African-inspired" content goes abroad</li>
-            <li>💰 Wakanda made $1.3B for Marvel, while real African communities remain poor</li>
-          </ul>
-          <p className="mt-4 text-lg font-semibold text-[#c41e25]">
-            We are losing our cultural wealth to digital colonialism.
-          </p>
-        </div>*/}
 
         {/* Features */}
         <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6 pb-20 fade-in stagger-3">
