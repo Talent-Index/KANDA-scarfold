@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [ Salma-dev-ops-patch-3, main ]
+  pull_request:
+    branches: [ Salma-dev-ops-patch-3, main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Use Node.js 22.16.0
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install root dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Install Hardhat package dependencies
+        run: |
+          cd packages/hardhat
+          yarn install --frozen-lockfile
+
+      - name: Compile contracts
+        run: |
+          cd packages/hardhat
+          yarn hardhat compile
+
+      # Optionally, add test steps if you have them
+      - name: Run Hardhat tests
+        run: |
+          cd packages/hardhat
+          yarn hardhat test
