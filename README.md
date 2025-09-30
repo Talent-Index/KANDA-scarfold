@@ -10,12 +10,6 @@
 - 👴 **90% of African elders** will take their stories to the grave - unrecorded, unlicensed, unrewarded
 - 🏛️ **$2.6 billion** annual revenue from "African-inspired" content goes to foreign companies, not creators
 - 📱 **85% of African youth** can't name 5 traditional stories from their own community
-- 🌍 **Netflix, Disney, Hollywood** profit from African culture while communities remain poor
-
-### **The Painful Reality:**
-While **Wakanda generates $1.3 billion** for Marvel using African aesthetics, the **real African communities** whose cultures inspired it remain in poverty. Our grandmothers' lullabies become corporate jingles. Our traditional patterns become fashion trends. Our sacred stories become blockbuster plots.
-
-**We are losing our cultural wealth to digital colonialism.**
 
 ---
 
@@ -95,7 +89,37 @@ Revenue Split:
 - **🧱 Reusable Components**: Pre-built Web3 components for rapid development
 
 ---
+### **Frontend Architecture (Next.js + TypeScript)**
+```typescript
+packages/nextjs/
+├── app/
+│   ├── page.tsx                   // Landing page with problem statement
+│   ├── create/page.tsx            // Heritage creation form
+│   ├── marketplace/page.tsx       // Browse and license heritage
+│   └── community/page.tsx         // Dashboard with integrated verification
+├── components/
+│   └── HeritageCard.tsx          // Reusable heritage display component
+├── hooks/
+│   └── useKanda.ts               // Single custom hook for all contract interactions
+└── styles/
+    └── globals.css               // Tailwind + custom styling
+```
 
+### **Custom Hook Architecture**
+Simplified single-hook approach leveraging Scaffold-ETH2:
+
+```typescript
+useKanda() {
+  ├── allHeritages           // Query all minted items
+  ├── myHeritages            // User's created heritage
+  ├── isValidator            // Check validator status
+  ├── mintHeritage()         // Create new heritage NFT
+  ├── verifyHeritage()       // Elder validation
+  ├── licenseHeritage()      // Purchase and distribute payment
+  └── Loading states         // isMinting, isVerifying, isLicensing
+}
+```
+---
 **KANDA** is a **blockchain-powered revolution** where Africans finally:
 - **OWN** their cultural assets as verified digital property
 - **PROFIT** from their heritage when others use it commercially  
