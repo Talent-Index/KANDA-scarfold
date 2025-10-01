@@ -25,10 +25,17 @@
 
 ## 🎬 Quick Demo
 
-<video src="acces/WhatsApp%20Video%202025-10-01%20at%2001.33.55_5708530a.mp4" controls preload="metadata" width="100%" poster="acces/homepage.png">
-  Your viewer may not support inline videos. Watch the demo here:
-  <a href="acces/WhatsApp%20Video%202025-10-01%20at%2001.33.55_5708530a.mp4">KANDA Demo Video</a>.
-</video>
+Note: To keep pushes fast, the large MP4 demo may be excluded from the remote. If the inline player below does not load on GitHub, clone locally or check project releases.
+
+- Demo video file path (for local clones):
+  `acces/WhatsApp Video 2025-10-01 at 01.33.55_5708530a.mp4`
+
+<details>
+<summary>Inline preview (works when the file is present locally)</summary>
+
+<video src="acces/WhatsApp%20Video%202025-10-01%20at%2001.33.55_5708530a.mp4" controls preload="metadata" width="100%" poster="acces/homepage.png"></video>
+
+</details>
 
 ---
 
