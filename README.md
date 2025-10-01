@@ -1,7 +1,72 @@
 # KANDA - African Cultural Heritage NFT Platform
 
+<p align="center">
+  <img src="acces/Untitled%20design/1.png" alt="KANDA Logo" width="180" />
+</p>
+
 ## **Own Your Heritage. Preserve Your Pride. Profit From Your Past.**
 > *Every African story deserves to live forever - and reward its keeper*
+
+---
+
+## 🔗 Quick Navigation
+
+- [🎬 Quick Demo](#quick-demo)
+- [📸 Screenshots](#screenshots)
+- [🚨 The Cultural Crisis](#the-cultural-crisis-we-face-today)
+- [🚀 Key Features](#-key-features)
+- [🏗️ Technical Architecture](#%EF%B8%8F-technical-architecture)
+- [⚙️ Quickstart](#quickstart)
+- [✅ TODO](#-todo)
+
+---
+
+<a id="quick-demo"></a>
+
+## 🎬 Quick Demo
+
+<video src="acces/WhatsApp%20Video%202025-10-01%20at%2001.33.55_5708530a.mp4" controls preload="metadata" width="100%" poster="acces/homepage.png">
+  Your viewer may not support inline videos. Watch the demo here:
+  <a href="acces/WhatsApp%20Video%202025-10-01%20at%2001.33.55_5708530a.mp4">KANDA Demo Video</a>.
+</video>
+
+---
+
+<a id="screenshots"></a>
+
+## 📸 Screenshots
+
+Below are selected screenshots highlighting key flows. All assets are available in `acces/`.
+
+<p>
+  <img src="acces/homepage.png" alt="Homepage" width="49%" />
+  <img src="acces/Marketplace.png" alt="Marketplace" width="49%" />
+  
+</p>
+<p>
+  <img src="acces/create_heritage.png" alt="Create Heritage" width="49%" />
+  <img src="acces/createHeritageForm.png" alt="Create Heritage Form" width="49%" />
+</p>
+<p>
+  <img src="acces/community_dashboard.png" alt="Community Dashboard" width="49%" />
+  <img src="acces/pending_verifidHeritage.png" alt="Pending Verified Heritage" width="49%" />
+</p>
+<p>
+  <img src="acces/Community_feed.png" alt="Community Feed" width="49%" />
+  <img src="acces/Wallet.png" alt="Wallet Menu" width="49%" />
+</p>
+
+---
+
+## ✅ TODO
+
+- Implement governance-based split (40/30/20/10) with transparent distribution addresses
+- Add IPFS pinning and media upload flow for audio/video/images with metadata
+- Require multi-validator threshold (e.g., 3-of-N) before `verified = true`
+- Add dispute resolution and community governance token mechanics
+- Expand i18n: language detection + translations across UI
+- Improve mobile-first layouts and offline-friendly assets
+- Add unit tests (Solidity + frontend) and basic analytics dashboard
 
 ## 🚨 **THE CULTURAL CRISIS WE FACE TODAY**
 
@@ -63,10 +128,21 @@ KANDA is more than a platform — it’s a movement. We envision a future where 
 - **Dispute Resolution**: Community governance for contested heritage items
 
 ### 💰 **Smart Royalty Distribution**
+
+- Current demo (implemented in contract):
+
 ```solidity
-Revenue Split:
+Revenue Split (Demo):
+├── Creator : 60%
+└── Platform Sustainability: 40%
+```
+
+- Roadmap split (governed by community DAO):
+
+```solidity
+Revenue Split (Planned):
 ├── Creator : 40%
-├── Community Fund: 30%  
+├── Community Fund: 30%
 ├── Elder Validators: 20%
 └── Platform Sustainability: 10%
 ```
@@ -183,4 +259,9 @@ Run smart contract test with `yarn hardhat:test`
 - Edit your smart contracts in `packages/hardhat/contracts`
 - Edit your frontend homepage at `packages/nextjs/app/page.tsx`. For guidance on [routing](https://nextjs.org/docs/app/building-your-application/routing/defining-routes) and configuring [pages/layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts) checkout the Next.js documentation.
 - Edit your deployment scripts in `packages/hardhat/deploy`
+
+
+## 🖼️ Branding
+
+The README uses the logo from `acces/Untitled design/1.png`. You can replace it with another option from the `acces/Untitled design` or `acces/Untitled design (1)` folders if preferred.
 
