@@ -264,11 +264,5 @@ Visit your app on: `http://localhost:3000`. You can interact with your smart con
 Run smart contract test with `yarn hardhat:test`
 
 - Edit your smart contracts in `packages/hardhat/contracts`
-- Edit your frontend homepage at `packages/nextjs/app/page.tsx`. For guidance on [routing](https://nextjs.org/docs/app/building-your-application/routing/defining-routes) and configuring [pages/layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts) checkout the Next.js documentation.
 - Edit your deployment scripts in `packages/hardhat/deploy`
-
-
-## 🖼️ Branding
-
-The README uses the logo from `acces/Untitled design/1.png`. You can replace it with another option from the `acces/Untitled design` or `acces/Untitled design (1)` folders if preferred.
 
